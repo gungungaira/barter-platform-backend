@@ -1,0 +1,262 @@
+.my-profile-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 70px 20px 60px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15), transparent 35%),
+    #07152b;
+  color: #ffffff;
+}
+
+.my-profile-page > h1 {
+  text-align: center;
+  margin: 0 auto 35px;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.my-profile-page > h1::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin: 12px auto 0;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #38bdf8);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(13, 34, 67, 0.92);
+  border: 1px solid rgba(120, 150, 220, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(20px);
+}
+
+.profile-photo-wrapper {
+  width: 135px;
+  height: 135px;
+  margin: 5px auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #6875e8;
+  background: #1b3568;
+  box-shadow:
+    0 0 0 7px rgba(99, 102, 241, 0.07),
+    0 0 30px rgba(99, 102, 241, 0.25);
+}
+
+.profile-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-photo-default {
+  width: 65px;
+  height: 65px;
+  color: #a5b4fc;
+}
+
+.profile-item {
+  width: 100%;
+  min-height: 82px;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.25s ease;
+}
+
+.profile-item:hover {
+  padding-left: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.06),
+    transparent
+  );
+}
+
+.profile-item h3 {
+  margin: 0 0 5px;
+  color: #779de0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-item p {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.profile-item:first-of-type {
+  min-height: 75px;
+}
+
+.profile-item:first-of-type p {
+  font-size: 21px;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #c4b5fd,
+    #93c5fd
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 18px auto 0;
+  padding: 22px 28px;
+  background: rgba(13, 34, 67, 0.92);
+  border: 1px solid rgba(120, 150, 220, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.skills-container h2 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.skills-container h2::before {
+  content: "✦";
+  margin-right: 9px;
+  color: #8b5cf6;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.7);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-tag {
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #dbeafe;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  border-color: rgba(129, 140, 248, 0.6);
+  background: rgba(99, 102, 241, 0.2);
+  box-shadow: 0 5px 18px rgba(99, 102, 241, 0.12);
+}
+
+.skills-container > p {
+  margin: 0;
+  color: #8195b5;
+  font-size: 14px;
+}
+
+.my-profile-page > h2 {
+  width: fit-content;
+  max-width: 90%;
+  margin: 150px auto;
+  padding: 20px 30px;
+  text-align: center;
+  color: #b9c7dd;
+  font-size: 17px;
+  background: rgba(13, 34, 67, 0.9);
+  border: 1px solid rgba(120, 150, 220, 0.18);
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .my-profile-page {
+    padding: 45px 12px;
+  }
+
+  .my-profile-page > h1 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .profile-card {
+    padding: 25px 20px 5px;
+    border-radius: 20px;
+  }
+
+  .profile-photo-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .profile-item {
+    min-height: 72px;
+    padding: 13px 5px;
+  }
+
+  .profile-item p {
+    font-size: 15px;
+  }
+
+  .profile-item:first-of-type p {
+    font-size: 20px;
+  }
+
+  .skills-container {
+    padding: 19px 20px;
+    border-radius: 18px;
+  }
+
+  .skills-container h2 {
+    font-size: 15px;
+  }
+
+  .skill-tag {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .my-profile-page {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .profile-card {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .skills-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

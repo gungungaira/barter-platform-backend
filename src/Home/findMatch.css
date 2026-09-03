@@ -1,0 +1,258 @@
+.find-match-page {
+  min-height: 100vh;
+  padding: 40px 50px;
+  box-sizing: border-box;
+
+  /* Blue theme background */
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.find-match-page h1 {
+  text-align: center;
+  margin: 0 0 35px;
+
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* =========================
+   MATCH LIST
+========================= */
+
+.match-list {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =========================
+   MATCH CARD
+========================= */
+
+.match-card {
+  width: 100%;
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  padding: 20px 25px;
+  box-sizing: border-box;
+
+  background: #172554;
+
+  border: 1px solid #3b82f6;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+
+  background: #1e3a8a;
+
+  border-color: #60a5fa;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   USER NAME
+========================= */
+
+.match-card h3 {
+  width: 170px;
+  min-width: 170px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =========================
+   MATCH INFORMATION
+========================= */
+
+.match-card p {
+  flex: 1;
+
+  margin: 0;
+
+  color: #dbeafe;
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.match-card p strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #93c5fd;
+
+  font-size: 14px;
+}
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.match-actions {
+  min-width: 230px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.match-actions button {
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+/* Check Profile */
+
+.match-actions button:first-child {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.match-actions button:first-child:hover {
+  background: #60a5fa;
+}
+
+/* Send Request */
+
+.match-actions button:last-child {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.match-actions button:last-child:hover {
+  background: #1d4ed8;
+}
+
+/* Request already sent */
+
+.match-actions button:disabled {
+  background: #475569;
+  color: #cbd5e1;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   LOADING / ERROR / EMPTY
+========================= */
+
+.find-match-page > h2 {
+  margin-top: 100px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .find-match-page {
+    padding: 30px 25px;
+  }
+
+  .match-card {
+    gap: 15px;
+  }
+
+  .match-card h3 {
+    width: 130px;
+    min-width: 130px;
+  }
+
+  .match-actions {
+    min-width: 180px;
+
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .find-match-page {
+    padding: 25px 15px;
+  }
+
+  .find-match-page h1 {
+    font-size: 28px;
+  }
+
+  .match-card {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .match-card h3 {
+    width: 100%;
+    min-width: auto;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #3b82f6;
+  }
+
+  .match-card p {
+    width: 100%;
+  }
+
+  .match-actions {
+    width: 100%;
+    min-width: auto;
+
+    flex-direction: column;
+  }
+
+  .match-actions button {
+    width: 100%;
+  }
+}

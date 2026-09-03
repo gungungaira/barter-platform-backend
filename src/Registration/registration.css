@@ -1,0 +1,99 @@
+.register-main-h2{
+    font-size: 8px;
+}
+
+.head-of-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gunjan 8s ease infinite;
+  }
+  @keyframes gunjan {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .inner-comp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    transition: transform 0.5s ease;
+  }
+  
+  
+  .inner-comp:hover {
+      transform: scale(1.03);
+    }
+  
+    .head-of-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+  .in-head-1{
+      color:white;
+      font-size: 33px;
+     
+  }
+  .login-text{
+    display: flex;
+    justify-content: center;
+      font-size: 33px;
+      font-weight: 700;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: inherit;
+      font-variant: initial;
+      color:darkblue;
+      animation: slideFade 1.5s ease-in-out;
+  }
+  
+  @keyframes slideFade {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  .inner-comp{
+      display: flex;
+      justify-content:space-evenly;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+  }
+  
+  .inner-comp-input{
+      width: 200px;
+      height: 20px;
+      padding: 8px;
+      border: 2px solid black;
+      border-radius: 6px;
+      outline: none;
+      transition: all 0.3s ease;
+  
+  }
+  
+  .inner-comp-input-button{
+      width:90px;
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 9px;
+  }

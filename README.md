@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# SkillLoop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Learn. Teach. Connect. Repeat.
 
-## Available Scripts
+SkillSwap YOUR BEST's is a modern skill-exchange platform where users can share the skills they know and discover people who can teach them new skills.
 
-In the project directory, you can run:
+Instead of paying for every skill, users can connect with others and exchange knowledge based on what they can teach and what they want to learn.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+SkillLoop is designed as a community-driven platform for learning and teaching.
 
-### `npm test`
+A user can:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create an account
+- Login securely
+- Create their personal profile
+- Add skills they can teach
+- Add skills they want to learn
+- View their profile
+- View their skills
+- Discover potential skill exchanges
+- Send and receive skill-exchange requests
 
-### `npm run build`
+The main idea is simple:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> You teach what you know and learn what you want.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Features
 
-### `npm run eject`
+### 🔐 Authentication
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- User registration
+- User login
+- Password encryption
+- JWT-based authentication
+- Protected API routes
+- Token-based user identification
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 👤 User Profile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Users can create their own profile with:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Name
+- Profile photo
+- Address
+- Language
+- Experience
+- Availability
 
-## Learn More
+Users can view their submitted profile in a clean profile section.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🧠 Skill Management
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Users can add two types of skills:
 
-### Code Splitting
+**Skills I Can Teach**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Skills that the user already knows and is willing to teach.
 
-### Analyzing the Bundle Size
+**Skills I Want To Learn**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Skills that the user wants to learn from other members.
 
-### Making a Progressive Web App
+The application uses skill suggestions to make selecting skills easier.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🔎 Skill Matching
 
-### Advanced Configuration
+SkillLoop is designed around matching users based on their teaching and learning skills.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For example:
 
-### Deployment
+```text
+User A
+Can teach: React
+Wants to learn: Guitar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+        ↕ Skill Exchange
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User B
+Can teach: Guitar
+Wants to learn: React

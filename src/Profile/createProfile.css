@@ -1,0 +1,224 @@
+.profile_head {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 70px 20px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(99, 102, 241, 0.18),
+      transparent 38%
+    ),
+    linear-gradient(135deg, #080a18 0%, #10132b 50%, #080a18 100%);
+}
+
+.profile_head2 {
+  width: 100%;
+  max-width: 650px;
+
+  box-sizing: border-box;
+}
+
+.profile_head3 {
+  width: 100%;
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  background: rgba(16, 19, 43, 0.9);
+
+  border: 1px solid rgba(129, 140, 248, 0.2);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(99, 102, 241, 0.07);
+
+  backdrop-filter: blur(14px);
+}
+.create-text {
+  margin: 0 0 35px;
+
+  text-align: center;
+
+  color: #ffffff !important;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.profile-form-wrapper {
+  width: 100%;
+}
+
+.inner-comp {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.inner-comp-input,
+.inner-comp select {
+  width: 100%;
+
+  height: 52px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  background: rgba(8, 10, 24, 0.8);
+
+  border: 1px solid rgba(148, 163, 184, 0.22);
+
+  border-radius: 10px;
+
+  outline: none;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-family: inherit;
+
+  transition: all 0.25s ease;
+}
+
+.inner-comp textarea {
+  height: 110px;
+
+  padding: 15px 16px;
+
+  resize: vertical;
+}
+
+.inner-comp-input::placeholder {
+  color: #6f768b;
+}
+
+.inner-comp-input:focus,
+.inner-comp select:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.1),
+    0 0 20px rgba(99, 102, 241, 0.08);
+}
+
+.inner-comp select {
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+.inner-comp select option {
+  background: #151936;
+
+  color: #ffffff;
+}
+
+.inner-comp a {
+  width: 100%;
+
+  height: 52px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 15px !important;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.inner-comp a[href="/addSkills"] {
+  margin-top: 10px;
+
+  background: #6366f1;
+
+  color: #ffffff;
+
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+}
+
+.inner-comp a[href="/addSkills"]:hover {
+  background: #818cf8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.35);
+}
+
+.inner-comp a[href="/home"] {
+  margin-top: -5px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #b5b9d1;
+}
+
+.inner-comp a[href="/home"]:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .profile_head {
+    padding: 35px 15px;
+  }
+
+  .profile_head3 {
+    padding: 28px 20px;
+
+    border-radius: 17px;
+  }
+
+  .create-text {
+    font-size: 25px;
+
+    margin-bottom: 28px;
+  }
+
+  .inner-comp {
+    gap: 15px;
+  }
+
+  .inner-comp-input,
+  .inner-comp select {
+    height: 50px;
+  }
+
+  .inner-comp textarea {
+    height: 100px;
+  }
+}

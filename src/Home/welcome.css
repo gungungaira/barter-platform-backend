@@ -1,0 +1,881 @@
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.welcome-section {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+
+  padding: 70px 7% 45px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(124, 58, 237, 0.16),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(14, 165, 233, 0.12),
+      transparent 35%
+    ),
+    #080b18;
+
+  color: #fff;
+}
+
+
+/* =========================================
+   GLOW
+========================================= */
+
+.welcome-glow {
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  pointer-events: none;
+
+  opacity: 0.15;
+}
+
+.welcome-glow-one {
+  top: -150px;
+  left: 15%;
+
+  background: #8b5cf6;
+}
+
+.welcome-glow-two {
+  right: -100px;
+  bottom: 0;
+
+  background: #06b6d4;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.welcome-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1250px;
+
+  margin: auto;
+
+  min-height: 390px;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 40px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.welcome-content {
+  max-width: 650px;
+}
+
+
+/* Badge */
+
+.welcome-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 9px 17px;
+
+  margin-bottom: 22px;
+
+  border: 1px solid rgba(139, 92, 246, 0.45);
+
+  border-radius: 30px;
+
+  background: rgba(139, 92, 246, 0.08);
+
+  color: #c4b5fd;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 0 25px rgba(139, 92, 246, 0.08);
+}
+
+.welcome-badge span {
+  color: #a855f7;
+
+  text-shadow:
+    0 0 12px #a855f7;
+}
+
+
+/* Heading */
+
+.welcome-content h1 {
+  margin: 0;
+
+  font-size: clamp(38px, 4vw, 64px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.welcome-content h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #a855f7,
+      #8b5cf6,
+      #38bdf8
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  text-shadow:
+    0 0 30px rgba(139, 92, 246, 0.18);
+}
+
+
+/* Paragraph */
+
+.welcome-content p {
+  max-width: 570px;
+
+  margin: 25px 0;
+
+  color: #9da5ba;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.welcome-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 28px;
+}
+
+
+/* Primary */
+
+.welcome-primary {
+  border: none;
+
+  padding: 15px 24px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6
+    );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  box-shadow:
+    0 10px 35px rgba(99, 102, 241, 0.3);
+
+  transition: 0.3s ease;
+}
+
+.welcome-primary span {
+  font-size: 21px;
+
+  transition: 0.3s ease;
+}
+
+.welcome-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px rgba(99, 102, 241, 0.45);
+}
+
+.welcome-primary:hover span {
+  transform: translateX(5px);
+}
+
+
+/* Secondary */
+
+.welcome-secondary {
+  border: none;
+
+  background: transparent;
+
+  color: #aeb6cc;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  padding: 15px 12px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  transition: 0.3s ease;
+}
+
+.welcome-secondary:hover {
+  color: #c4b5fd;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   RIGHT VISUAL
+========================================= */
+
+.welcome-visual {
+  position: relative;
+
+  height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Center */
+
+.welcome-center {
+  position: relative;
+  z-index: 5;
+
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139, 92, 246, 0.25),
+      rgba(15, 23, 42, 0.95) 70%
+    );
+
+  border: 1px solid rgba(139, 92, 246, 0.5);
+
+  box-shadow:
+    0 0 40px rgba(139, 92, 246, 0.2),
+    inset 0 0 30px rgba(139, 92, 246, 0.1);
+}
+
+.center-icon {
+  font-size: 34px;
+
+  color: #a855f7;
+
+  text-shadow:
+    0 0 20px #a855f7;
+
+  margin-bottom: 5px;
+}
+
+.welcome-center strong {
+  font-size: 17px;
+}
+
+.welcome-center span {
+  color: #8f98ae;
+
+  font-size: 13px;
+
+  margin-top: 3px;
+}
+
+
+/* =========================================
+   ORBITS
+========================================= */
+
+.orbit {
+  position: absolute;
+
+  border: 1px dashed rgba(139, 92, 246, 0.25);
+
+  border-radius: 50%;
+}
+
+.orbit-one {
+  width: 270px;
+  height: 270px;
+
+  animation: rotateOrbit 18s linear infinite;
+}
+
+.orbit-two {
+  width: 370px;
+  height: 210px;
+
+  transform: rotate(-25deg);
+
+  border-color: rgba(56, 189, 248, 0.15);
+}
+
+
+/* =========================================
+   FLOATING SKILLS
+========================================= */
+
+.floating-skill {
+  position: absolute;
+
+  z-index: 6;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  min-width: 145px;
+
+  background: rgba(20, 24, 43, 0.85);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 13px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.3);
+
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+.floating-skill strong {
+  display: block;
+
+  font-size: 12px;
+}
+
+.floating-skill small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #8992a9;
+
+  font-size: 10px;
+}
+
+.skill-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(139, 92, 246, 0.12);
+
+  font-size: 17px;
+}
+
+
+/* Positions */
+
+.skill-one {
+  top: 35px;
+  left: 5px;
+}
+
+.skill-two {
+  top: 30px;
+  right: 0;
+
+  animation-delay: -1.2s;
+}
+
+.skill-three {
+  bottom: 45px;
+  left: 20px;
+
+  animation-delay: -2.5s;
+}
+
+.skill-four {
+  bottom: 30px;
+  right: 0;
+
+  animation-delay: -3.5s;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+========================================= */
+
+.quick-actions {
+  position: relative;
+  z-index: 5;
+
+  max-width: 1250px;
+
+  margin: 35px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+/* Card */
+
+.quick-card {
+  position: relative;
+
+  min-height: 105px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border 0.3s ease,
+    background 0.3s ease;
+}
+
+.quick-card:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(139, 92, 246, 0.4);
+
+  background:
+    rgba(139, 92, 246, 0.07);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Icon */
+
+.quick-icon {
+  min-width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 20px;
+}
+
+.quick-icon.purple {
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.quick-icon.blue {
+  background: rgba(14, 165, 233, 0.12);
+}
+
+.quick-icon.green {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.quick-icon.orange {
+  background: rgba(249, 115, 22, 0.1);
+}
+
+
+/* Text */
+
+.quick-text {
+  min-width: 0;
+}
+
+.quick-text h3 {
+  margin: 0 0 5px;
+
+  font-size: 14px;
+}
+
+.quick-text p {
+  margin: 0;
+
+  color: #7f889d;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* Arrow */
+
+.quick-arrow {
+  margin-left: auto;
+
+  color: #8b5cf6;
+
+  font-size: 18px;
+
+  opacity: 0;
+
+  transform: translateX(-5px);
+
+  transition: 0.3s ease;
+}
+
+.quick-card:hover .quick-arrow {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+
+/* =========================================
+   TIP
+========================================= */
+
+.welcome-tip {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 1250px;
+
+  margin: 18px auto 0;
+
+  padding: 13px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(139, 92, 246, 0.1);
+
+  background: rgba(139, 92, 246, 0.035);
+
+  color: #8992a8;
+
+  font-size: 12px;
+}
+
+.welcome-tip span {
+  color: #a855f7;
+
+  font-size: 16px;
+}
+
+.welcome-tip strong {
+  color: #a78bfa;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes floatCard {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .welcome-section {
+    padding: 55px 5% 40px;
+  }
+
+  .welcome-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .welcome-content {
+    margin: auto;
+  }
+
+  .welcome-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .welcome-actions {
+    justify-content: center;
+  }
+
+  .welcome-visual {
+    height: 330px;
+  }
+
+  .quick-actions {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .welcome-section {
+    padding: 45px 20px 30px;
+  }
+
+  .welcome-content h1 {
+    font-size: 37px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .welcome-content p {
+    font-size: 14px;
+  }
+
+  .welcome-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .welcome-primary,
+  .welcome-secondary {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .welcome-visual {
+    height: 290px;
+  }
+
+  .welcome-center {
+    width: 115px;
+    height: 115px;
+  }
+
+  .center-icon {
+    font-size: 26px;
+  }
+
+  .floating-skill {
+    min-width: 120px;
+
+    padding: 8px 10px;
+  }
+
+  .floating-skill strong {
+    font-size: 10px;
+  }
+
+  .floating-skill small {
+    font-size: 9px;
+  }
+
+  .skill-icon {
+    width: 29px;
+    height: 29px;
+
+    font-size: 14px;
+  }
+
+  .skill-one {
+    left: -5px;
+    top: 25px;
+  }
+
+  .skill-two {
+    right: -5px;
+    top: 25px;
+  }
+
+  .skill-three {
+    left: 0;
+    bottom: 25px;
+  }
+
+  .skill-four {
+    right: -5px;
+    bottom: 20px;
+  }
+
+  .orbit-one {
+    width: 220px;
+    height: 220px;
+  }
+
+  .orbit-two {
+    width: 290px;
+    height: 170px;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .quick-card {
+    min-height: 80px;
+  }
+
+  .welcome-tip {
+    line-height: 1.5;
+
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .welcome-content h1 {
+    font-size: 32px;
+  }
+
+  .welcome-visual {
+    height: 260px;
+  }
+
+  .floating-skill {
+    min-width: 105px;
+  }
+
+  .floating-skill strong {
+    font-size: 9px;
+  }
+
+  .floating-skill small {
+    font-size: 8px;
+  }
+}

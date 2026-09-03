@@ -1,0 +1,274 @@
+/* =========================
+   REQUESTS PAGE
+========================= */
+
+.requests-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 45px 30px;
+  box-sizing: border-box;
+
+  background: #07172f;
+  color: white;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.requests-page h1 {
+  margin: 10px 0 40px;
+
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   REQUEST LIST
+========================= */
+
+.request-list {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   REQUEST CARD
+========================= */
+
+.request-card {
+  padding: 25px 28px;
+
+  background: #142f5a;
+
+  border: 1px solid #244979;
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+
+/* Hover */
+
+.request-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #4d83d1;
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   REQUEST MESSAGE
+========================= */
+
+.request-card p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  color: #dce8f8;
+}
+
+
+/* Sender name */
+
+.request-card p strong {
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.request-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 22px;
+}
+
+
+/* =========================
+   BUTTON COMMON
+========================= */
+
+.request-actions button {
+  min-width: 120px;
+
+  padding: 11px 22px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+/* =========================
+   ACCEPT BUTTON
+========================= */
+
+.request-actions button:first-child {
+  border: none;
+
+  background: #4d83d1;
+
+  color: white;
+}
+
+
+.request-actions button:first-child:hover {
+  background: #6397df;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.request-actions button:last-child {
+  background: transparent;
+
+  border: 1px solid #6b86a8;
+
+  color: #dce8f8;
+}
+
+
+.request-actions button:last-child:hover {
+  background: #263f63;
+
+  border-color: #8da8ca;
+
+  color: white;
+}
+
+
+/* =========================
+   LOADING / ERROR / EMPTY
+========================= */
+
+.requests-page > h2 {
+  text-align: center;
+
+  margin-top: 100px;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  color: #dce8f8;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .requests-page {
+    padding: 35px 20px;
+  }
+
+  .requests-page h1 {
+    font-size: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  .request-card {
+    padding: 22px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .requests-page {
+    padding: 30px 15px;
+  }
+
+  .requests-page h1 {
+    font-size: 28px;
+  }
+
+  .request-card {
+    padding: 20px;
+  }
+
+  .request-card p {
+    font-size: 15px;
+  }
+
+  .request-card p strong {
+    font-size: 16px;
+  }
+
+  .request-actions {
+    flex-direction: column;
+  }
+
+  .request-actions button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .requests-page {
+    padding: 25px 10px;
+  }
+
+  .requests-page h1 {
+    font-size: 25px;
+  }
+
+}
