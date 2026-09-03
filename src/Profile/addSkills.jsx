@@ -239,43 +239,22 @@ const SkillAutocomplete = () => {
       setUploading(false);
     }
   };
-  const fileData = () => {
-    if (selectedFile) {
-      return (
-        <div>
-          <h2>File Details:</h2>
-          <p>File Name: {selectedFile.name}</p>
-          <p>File Type: {selectedFile.type}</p>
-          <p>
-            Last Modified: {new Date(selectedFile.lastModified).toDateString()}
-          </p>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <br />
-          <h4>Choose before Pressing the Upload button</h4>
-        </div>
-      );
-    }
-  };
 useEffect(() => {
   return () => {
     if (previewUrl) URL.revokeObjectURL(previewUrl);
   };
 }, [previewUrl]);
-  const getProfile = async () => {
-    const token = localStorage.getItem("token");
-    const server = await fetch("https://barter-platform-backend.onrender.com/getMyProfile", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    const data = await server.json();
-    console.log(data);
-  };
+  // const getProfile = async () => {
+  //   const token = localStorage.getItem("token");
+  //   const server = await fetch("https://barter-platform-backend.onrender.com/getMyProfile", {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: `Bearer ${token}`,
+  //     },
+  //   });
+  //   const data = await server.json();
+  //   console.log(data);
+  // };
 
     const handleSubmit = async () => {
     if (teachingSkills.length === 0) {

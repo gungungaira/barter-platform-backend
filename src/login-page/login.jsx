@@ -1,7 +1,6 @@
 import React, { useState,useEffect} from 'react'
 import './login.css'
 import { useDispatch } from 'react-redux';
-// import { Link} from "react-router-dom";
 import { login } from '../Authentication/auth';
 import { Link,useNavigate } from 'react-router-dom';
 

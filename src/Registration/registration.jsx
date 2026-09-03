@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Navigate } from "react";
+import React, { useState, useEffect } from "react";
 import "./registration.css";
 import { Link, useNavigate } from "react-router-dom";
 
