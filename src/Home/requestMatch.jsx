@@ -20,7 +20,7 @@ const Requests = () => {
     }
 
     try {
-      const server = await fetch("http://localhost:4040/myRequests", {
+      const server = await fetch("https://barter-platform-backend.onrender.com/myRequests", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ const Requests = () => {
 
     try {
       const server = await fetch(
-        `http://localhost:4040/request/${requestId}/accept`,
+        `https://barter-platform-backend.onrender.com/request/${requestId}/accept`,
         {
           method: "PATCH",
           headers: {
@@ -77,7 +77,7 @@ const Requests = () => {
 
     try {
       const server = await fetch(
-        `http://localhost:4040/request/${requestId}`,
+        `https://barter-platform-backend.onrender.com/request/${requestId}`,
         {
           method: "DELETE",
           headers: {

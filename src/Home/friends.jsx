@@ -17,7 +17,7 @@ const Friends = () => {
         return;
       }
       try {
-        const res = await fetch("http://localhost:4040/friends", {
+        const res = await fetch("https://barter-platform-backend.onrender.com/friends", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

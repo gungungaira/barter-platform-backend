@@ -32,7 +32,7 @@ const Inbox = () => {
         return;
       }
       try {
-        const res = await fetch("http://localhost:4040/inbox", {
+        const res = await fetch("https://barter-platform-backend.onrender.com/inbox", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

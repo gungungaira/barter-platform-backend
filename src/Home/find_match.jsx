@@ -20,7 +20,7 @@ const FindMatch = () => {
       }
 
       try {
-        const server = await fetch("http://localhost:4040/findMatch", {
+        const server = await fetch("https://barter-platform-backend.onrender.com/findMatch", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const FindMatch = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const server = await fetch("http://localhost:4040/sendRequest", {
+      const server = await fetch("https://barter-platform-backend.onrender.com/sendRequest", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

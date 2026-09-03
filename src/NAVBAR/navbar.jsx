@@ -19,7 +19,7 @@ const Navbar = () => {
 
     try {
       const server = await fetch(
-        "http://localhost:4040/getMyProfile",
+        "https://barter-platform-backend.onrender.com/getMyProfile",
         {
           method: "GET",
           headers: {

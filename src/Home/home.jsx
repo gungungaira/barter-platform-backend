@@ -113,7 +113,7 @@ const Home = () => {
     if (!token) return;
 
     try {
-      const res = await fetch("http://localhost:4040/getMyProfile", {
+      const res = await fetch("https://barter-platform-backend.onrender.com/getMyProfile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();

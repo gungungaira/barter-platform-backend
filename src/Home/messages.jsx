@@ -38,7 +38,7 @@ const Message = () => {
     const userId = getUserIdFromToken(token);
     myUserId.current = userId;
 
-    socket = io("http://localhost:4040");
+    socket = io("https://barter-platform-backend.onrender.com");
     socket.emit("join", userId);
 
     socket.on("newMessage", (message) => {
@@ -55,7 +55,7 @@ const Message = () => {
     const fetchConversation = async () => {
       try {
         const res = await fetch(
-          `http://localhost:4040/conversation/${friendId}`,
+          `https://barter-platform-backend.onrender.com/conversation/${friendId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },

@@ -26,7 +26,7 @@ const Registration = () => {
 
   const getRegistration = async () => {
     const token =localStorage.getItem('token')
-    const myServer = await fetch("http://localhost:4040/profile", {
+    const myServer = await fetch("https://barter-platform-backend.onrender.com/profile", {
       method: "GET",
       headers: {
         'authorization':`Bearer ${token}`
@@ -39,7 +39,7 @@ const Registration = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const myServer = await fetch("http://localhost:4040/register", {
+    const myServer = await fetch("https://barter-platform-backend.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

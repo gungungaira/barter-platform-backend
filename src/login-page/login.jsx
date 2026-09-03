@@ -60,7 +60,7 @@ const dispatch = useDispatch();
 
  const getUser =async()=>{
   const token = localStorage.getItem('token');
-  const getServer= await fetch('http://localhost:4040/profile',{
+  const getServer= await fetch('https://barter-platform-backend.onrender.com/profile',{
      method: 'GET',
     headers: {
       'Authorization': `Bearer ${token}`
@@ -71,59 +71,6 @@ const dispatch = useDispatch();
  }
 
 
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  
-  //   const isValid = checkError();
-  
-  //   if (!isValid) {
-  //     return;
-  //   }
-  
-  //   setLoading(true);
-
-  //   if (
-  //     limit.email !== "gungungaira@gmail.com" ||
-  //     limit.password !== "111111"
-  //   ) {
-  //     setError({
-  //       password: "Wrong email or password"
-  //     });
-  
-  //     return;
-  //   }
-  
-  //   setLoading(true);
-  
-  
-  //   try {
-  //     const server = await fetch("http://localhost:4040/login", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json"
-  //       },
-  //       body: JSON.stringify(limit)
-  //     });
-  
-  //     const data = await server.json();
-  
-  //     if (data.success) {
-  //       // dispatch(login(data.user));
-  //       dispatch(login({
-  //         email: limit.email
-  //       }));
-  //       await getUser();
-  //       navigate("/home");
-  //     }
-  
-  //   } catch (error) {
-  //     console.log(error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
- 
   const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -133,7 +80,7 @@ const dispatch = useDispatch();
   setLoading(true);
 
   try {
-    const server = await fetch("http://localhost:4040/login", {
+    const server = await fetch("https://barter-platform-backend.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(limit)
