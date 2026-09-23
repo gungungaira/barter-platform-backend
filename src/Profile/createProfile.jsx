@@ -38,7 +38,7 @@ const CreateProfile = () => {
       neErr.availability = "availability field is required ";
     }
     setError(neErr);
-    if (Object.keys(neErr).length > 0) {
+    if (Object.keys(neErr)) {
       return;
     }
     navigate("/addSkills", { state: { profileData: inputData } });
